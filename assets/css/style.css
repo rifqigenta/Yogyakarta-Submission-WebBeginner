@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Quicksand:wght@400;700&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 0;
+}
+header.navbar-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFD600;
+    position: fixed;
+}
+header.navbar-container .brand a{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+header.navbar-container .brand img{
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+    margin: auto;
+    display: flex;
+}
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+header.navbar-container .nav-list li{
+    list-style: none;
+}
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+header.navbar-container .nav-list li:hover a{
+    color: #000000;
+}
+main .jumbotron{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+}
+main .jumbotron{
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding-top: 5em;
+}
+main .jumbotron .brand-image img{
+    margin-right: 10vh;
+    margin-left: 20vh;
+    height: 30em;
+}
+main .jumbotron .brand-description {
+    flex: 1;
+    flex-wrap: wrap;
+}
+main .jumbotron .brand-description .title{
+    font-size: 3rem;
+    margin-block: 1rem;
+}
+main .jumbotron .brand-description p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+main .jumbotron .brand-description button{
+    margin-block: 5em;
+    padding: .8rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #FFD600;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+main .jumbotron .brand-description button:hover{
+    border: 3px solid #FFD600;
+    color: #000000;
+    background-color: transparent;
+}
+main .content{
+    max-width: 1200px;
+    flex: 1;
+    flex-flow: column nowrap;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 1rem 2rem;
+}
+main .content .card{
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.content #tentang-kami{
+    max-width: 1200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.content #tentang-kami .card-content{
+    margin-top: 0em !important;
+    background-color: white;
+}
+#tentang-kami .card-content{
+    display: flex;
+    flex-direction: column;
+}
+#tentang-kami .card-content img{
+    height: 20em;
+    border-radius: 10px;
+}
+#tentang-kami .card-content .card-description{
+    text-align: center;
+}
+#tentang-kami .card-content .card-description h2{
+    margin-top: 0em;
+}
+main .content .card .card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em 2em;
+}
+main .content .card .card-content img{
+    height: 50vh;
+}
+main .content .card .card-content .card-description{
+    text-align: left;
+}
+#hemat{
+    flex-direction: row-reverse;
+}
+main .content .card-content{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 3em;
+}
+.testimoni{
+    max-width: 1200px;
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem 2rem;
+    margin-bottom: 5em;
+}
+
+#testimoni h2{
+    margin-bottom: 2em;
+}
+.card-testi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 22em;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1em;
+    
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-body p{
+    text-align: center;
+}
+.card-img img{
+    width: 5em;
+    height: 5em;
+    margin: 15px;
+    border-radius: 999px;
+    object-fit: cover;
+}
+.card-body .card-img #name-card{
+    padding-block: 14px;
+}
+button.btn-service{
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #FFD600;
+    padding: .5rem 1.5rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    margin-block: 2rem;
+    border-radius: 15px;
+}
+button.btn-service:hover{
+    color: #000000;
+    border: 2px solid #FFD600;
+    background-color: transparent;
+}
+main aside.aside-contact{
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+main aside.aside-contact .contact{
+    height: 100%;
+    display: flex;
+}
+main aside.aside-contact .contact ul{
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    background-color: #FFD600;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+main aside.aside-contact .contact li{
+    list-style-type: none;
+}
+main aside.aside-contact .contact li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+main aside.aside-contact .contact li a:hover{
+    color: #c8a703;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px;   
+    font-weight: bold;
+    background-color: #FFD600;    
+}
+@media screen and (max-width: 768px){
+    header.navbar-container{
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul{
+        flex-wrap: nowrap;
+        column-gap: .5rem;
+    }
+    main .jumbotron{
+        flex-direction: column;
+    }
+    main .jumbotron{
+        margin-bottom: 4rem;
+    }
+    main .content{
+        flex-direction: column;
+        margin-inline: 2rem;
+        gap: 2rem;
+    }
+    #hemat{
+        flex-direction: column;
+    }
+    main .content .card .card-content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main .content .card .card-content .card-description p{
+        font-size: 1rem;
+    }
+    main .testimoni{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 425px){
+    header.navbar-container .nav-list ul{
+        flex-wrap: nowrap;
+        column-gap: .2rem;
+    }
+    header.navbar-container .nav-list li a{
+        font-size: .8rem;
+    }
+    main .jumbotron{
+        max-width: 100%;
+    }
+    main .jumbotron .brand-description .title{
+        font-size: 1.5rem;
+    }
+    main .jumbotron .brand-description p{
+        font-size: 1rem;
+    }
+    main .jumbotron .brand-description button{
+        margin-block: 1em;
+        font-size: .8rem;
+    }
+    main .jumbotron .brand-image img{
+        height: 20em;
+    }
+    #tentang-kami .card-content img{
+        height: 10em;
+    }
+    #tentang-kami .card-content .card-description p{
+        font-size: .8rem;
+    }
+    main .content .card .card-content img{
+        height: 35vh;
+    }
+    main .content .card .card-content .card-description h2{
+        font-size: 1.5rem;
+    }
+    main .content .card .card-content .card-description p{
+        font-size: .8rem;
+    }
+    footer{
+        font-size: .8rem;
+        padding: 10px 0; 
+    }
+
+}
+

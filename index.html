@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendil Washing Clinic</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="navbar-container">
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <div class="brand-image">
+                <img src="assets/images/laundry-jumbotron.png" alt="Laundry Woman">
+            </div>
+            <div class="brand-description">
+                <h1 class="title">Kendil Washing Clinic</h1>
+                <p>Bersihkan yang Kotor, Rapikan yang Kusut</p>
+                <a href="#layanan">
+                    <button>Pesan Sekarang</button>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <article id="container-tentang-kami">
+                <section class="card" id="tentang-kami" style="padding-top: 3em;">
+                    <h2>Tentang Kami</h2>
+                    <div class="card-content">
+                        <img src="assets/images/kendil-logo.png" alt="">
+                        <div class="card-description">
+                            <h2>Kendil Washing Clinic</h2>
+                            <p>
+                                Kendil Wasihng Clinic adalah sebuah nama yang dapat Anda percayai dalam dunia laundry. Didirikan pada tahun 2012, kami telah tumbuh menjadi salah satu penyedia layanan laundry terkemuka yang berkomitmen untuk memberikan pengalaman laundry yang tak tertandingi.
+                                Kami berdedikasi untuk menjaga pakaian Anda agar tetap bersih, rapi, dan harum. Dengan menggunakan teknologi modern dan bahan pembersih berkualitas tinggi, kami memberikan hasil yang memuaskan setiap kali Anda mempercayakan cucian Anda kepada kami.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="card" id="layanan" style="padding-top: 3em;">
+                <h2>Layanan</h2>
+                <div class="card-content">
+                    <img src="assets/images/pesan-antar.webp" alt="layanan pesan antar">
+                    <div class="card-description">
+                        <h2>Layanan Pesan Antar</h2>
+                        <p>
+                            Hidup yang sibuk seringkali membuat laundry menjadi tugas yang memakan waktu. Dengan layanan pesan antar Kendil Washing Clinic, Anda tidak perlu lagi terjebak dalam rutinitas laundry yang membosankan. Cukup hubungi kami, dan tim kami yang profesional akan menjemput cucian Anda sesuai jadwal yang Anda inginkan. Setelah dicuci, dikeringkan, dan disetrika dengan cermat, cucian Anda akan dikembalikan bersih dan harum tepat ke depan pintu Anda.
+                        </p>
+                        <button class="btn-service" onclick="delivery()">Pesan</button>
+                    </div>
+                </div>
+                <div class="card-content" id="hemat">
+                    <img src="assets/images/hemat.avif" alt="layanan hemat">
+                    <div class="card-description">
+                        <h2>Paket Hemat</h2>
+                        <p>
+                            Kami mengerti bahwa kebersihan adalah hak bagi semua orang. Dengan Paket Hemat dari Kendil Washing Clinic, Anda bisa menikmati layanan laundry berkualitas tinggi tanpa perlu khawatirkan biaya yang tinggi. Cucian Anda akan dirawat dengan hati-hati, dan kami memberikan perhatian khusus kepada setiap detail.
+                        </p>
+                        <button class="btn-service" onclick="hemat()">Pesan</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <img src="assets/images/express.png" alt="layanan express">
+                    <div class="card-description">
+                        <h2>Paket Express</h2>
+                        <p>
+                            Dalam dunia yang serba cepat, kecepatan seringkali menjadi keharusan. Untuk itu, Kendil Washing Clinic menyediakan Paket Express yang akan mengubah cucian Anda dalam waktu singkat. Tanpa mengorbankan kualitas, kami akan memproses cucian Anda dengan cepat sehingga Anda dapat merasa segar dan siap untuk beraksi dalam waktu singkat.
+                        </p>
+                        <button class="btn-service" onclick="express()">Pesan</button>
+                    </div>
+                </div>
+            </article>
+            <aside class="testi-content">
+                <article class="card" id="testimoni" style="padding-top: 3em;">
+                    <h2>Testimoni</h2>
+                    <div class="testimoni">
+                        <section>
+                            <div class="card-testi">
+                                <div class="card-body">
+                                    <div class="card-img">
+                                        <img src="/assets/images/testi.jpg" alt="">
+                                        <p id="name-card" style="font-size: 1.5rem; margin: auto; font-weight: bold;">Sarah</p>
+                                    </div>
+                                    <p>
+                                        Saya sangat senang dengan layanan Kendil Washing Clinic. Mereka menjemput cucian saya tepat waktu dan mengembalikannya dalam kondisi sempurna. Terimakasih, Kendil Washing Clinic !
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card-testi">
+                                <div class="card-body">
+                                    <div class="card-img">
+                                        <img src="/assets/images/testi2.jpg" alt="">
+                                        <p id="name-card" style="font-size: 1.5rem; margin: auto; font-weight: bold;">Putri</p>
+                                    </div>
+                                    <p>
+                                        Saya menggunakan layanan ekspres Kendil Washing Clinic, dan hasilnya luar biasa! Cucian saya dikembalikan lebih cepat dari yang saya perkirakan, dan semuanya terlihat luar biasa. Terimakasih banyak
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card-testi">
+                                <div class="card-body">
+                                    <div class="card-img">
+                                        <img src="/assets/images/testi3.jpg" alt="">
+                                        <p id="name-card" style="font-size: 1.5rem; margin: auto; font-weight: bold;">Riski</p>
+                                    </div>
+                                    <p>
+                                        Kendil Washing Clinic adalah pilihan terbaik untuk laundry saya. Mereka sangat efisien dan harga yang mereka tawarkan sangat terjangkau. Semua pakaian saya selalu bersih, rapi, dan wangi.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </aside>
+        </div>
+        <aside class="aside-contact">
+            <div class="contact">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>&copy; Copyright: Rifqi Genta Buana</footer>
+    <script>
+        function delivery() {
+            alert('Berhasil Memesan Layanan Pesan Antar!')
+        }
+        function hemat() {
+            alert('Berhasil Memesan Paket Hemat !')
+        }
+        function express() {
+            alert('Berhasil Memesan Paket Express !')
+        }
+    </script>
+</body>
+</html>
